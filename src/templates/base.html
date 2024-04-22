@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        .contenedor{
+            text-decoration-color: blue;
+            background-color: bisque;
+            margin: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+    
+<body>
+    <div class="contenedor">
+        <h1>Holaaa</h1>
+        <form action="/"method = 'post'>
+            <label for ='number'>Coloca El ID:</label>
+            <input type="number" id = 'ID' name = 'ID' required>
+            <button type="submit">Buscar</button>
+        </form>
+        {% if Register %}
+            <h1>Registro</h1>
+            <p>ID: {{ id_reg }}</p>
+            <p>Nombre: {{ name }}</p>
+            <p>Trabajo: {{ work }}</p>
+        {% endif %}
+    </div>
+    
+
+    
+</body>
+</html>
